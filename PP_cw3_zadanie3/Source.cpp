@@ -13,11 +13,11 @@ double sr_g(double x, double y) {
 }
 
 double sr_h(double x, double y) {
-	return 0.;
+	return 2.0 / ((1 / x) + (1 / y));
 }
 
 double sr_p(double x, double y) {
-	return 0.;
+	return sqrt((x * x + y * y)/ 2.0);
 }
 
 int main() {
@@ -25,7 +25,7 @@ int main() {
 	int flaga = 1;
 	char wybor = ' ';
 	cout << "jaka srednia obliczyc?";
-	cout << "\n\ta - artmetyczna\n\tg - geometryczna\n\th - harmoniczna\n\tp - potegowa?";
+	cout << "\n\ta - artmetyczna\n\tg - geometryczna\n\th - harmoniczna\n\tp - potegowa\n> ";
 	cin >> wybor;
 	cout << "\npodaj 2 liczby ";
 	cin >> liczba1 >> liczba2;
